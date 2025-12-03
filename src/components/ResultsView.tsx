@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { CheckCircle, XCircle, RotateCcw, MessageSquare, HelpCircle, Loader2 } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import { Pregunta, PreguntaReview } from '../types';
 import { getQuestionExplanation } from '../services/apiService';
 
@@ -212,7 +214,7 @@ export default function ResultsView({
                         ) : (
                           <>
                             <h4 className="font-semibold text-gray-800">Explicación:</h4>
-                            <ReactMarkdown remarkPlugins={[remarkGfm]}>{explanation.text || ''}</ReactMarkdown>
+                            <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>{explanation.text || ''}</ReactMarkdown>
                           </>
                         )}
                       </div>

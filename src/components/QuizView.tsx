@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, CheckCircle } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import { Pregunta } from '../types';
 
 interface QuizViewProps {
@@ -81,9 +85,11 @@ export default function QuizView({ preguntas, onBack, onComplete }: QuizViewProp
               )}
             </div>
 
-            <h2 className="text-xl font-semibold text-gray-800 leading-relaxed whitespace-pre-wrap">
-              {currentQuestion.enunciado}
-            </h2>
+            <div className="prose max-w-none">
+              <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>
+                {currentQuestion.enunciado}
+              </ReactMarkdown>
+            </div>
 
             {currentQuestion.imagen && (
               <div className="mt-6">

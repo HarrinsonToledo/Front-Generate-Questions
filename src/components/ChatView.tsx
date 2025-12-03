@@ -3,6 +3,8 @@ import { Send, Loader2 } from 'lucide-react';
 import TextareaAutosize from 'react-textarea-autosize';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import { ChatMessage, Pregunta } from '../types';
 import { sendChatMessage, sendChatMessageQuestionsEcaes, sendChatMessageQuestionsIcfes } from '../services/apiService';
 
@@ -109,12 +111,12 @@ export default function ChatView({ onQuestionsGenerated }: ChatViewProps) {
               <div
                 className={`max-w-xl px-6 py-4 rounded-2xl shadow-md ${
                   message.role === 'user'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-blue-400 text-white'
                     : 'bg-white text-gray-800 border border-gray-200'
                 }`}
               >
                 <div className="prose max-w-full">
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{message.content}</ReactMarkdown>
+                  <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>{message.content}</ReactMarkdown>
                 </div>
               </div>
             </div>
