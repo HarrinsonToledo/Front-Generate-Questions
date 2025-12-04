@@ -137,23 +137,27 @@ export default function QuizView({ preguntas, onBack, onComplete }: QuizViewProp
               <span>Anterior</span>
             </button>
 
-            <div className="flex space-x-2">
-              {preguntas.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-8 h-8 rounded-full text-sm font-medium transition-all ${
-                    index === currentIndex
-                      ? 'bg-blue-600 text-white'
-                      : respuestasUsuario[index]
-                      ? 'bg-green-100 text-green-700 border-2 border-green-500'
-                      : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
-                  }`}
-                >
-                  {index + 1}
-                </button>
-              ))}
+            {/* CAMBIO CLAVE: Agregamos un contenedor con desplazamiento horizontal */}
+            <div className="flex flex-grow justify-center min-w-0 mx-2">
+              <div className="flex space-x-2 overflow-x-auto pb-2 scrollbar-hide">
+                {preguntas.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentIndex(index)}
+                    className={`flex-shrink-0 w-8 h-8 rounded-full text-sm font-medium transition-all ${
+                      index === currentIndex
+                        ? 'bg-blue-600 text-white'
+                        : respuestasUsuario[index]
+                        ? 'bg-green-100 text-green-700 border-2 border-green-500'
+                        : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                    }`}
+                  >
+                    {index + 1}
+                  </button>
+                ))}
+              </div>
             </div>
+            {/* FIN DEL CAMBIO CLAVE */}
 
             {currentIndex === preguntas.length - 1 ? (
               <button
