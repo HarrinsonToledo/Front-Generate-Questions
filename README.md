@@ -213,7 +213,7 @@ Si por el contrario seleccionaste la opción de **CHAT**, podrás interactuar co
 
 En este modo, puedes seguir conversando por chat y el agente te responderá cualquier consulta de forma conversacional.
 
-![Conversación Continuada](src\imgDoc\mantenerChat.jpg)
+src\imgDoc\mantenerChat.jpg
 -----
 ## 🤝 Contribuciones
 
