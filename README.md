@@ -160,7 +160,7 @@ Si prefieres omitir el proceso de instalación del repositorio y probar la aplic
 
 La página principal es una interfaz de chat donde podrás interactuar y consultar lo que necesites, siguiendo la instrucción inicial.
 
-![Chat Principal](src\imgDoc\chatPrincipal.jpg)
+![Chat Principal](src/imgDoc/chatPrincipal.jpg)
 
 A continuación, podrás seleccionar una de las opciones disponibles en el chat:
 
@@ -168,7 +168,7 @@ A continuación, podrás seleccionar una de las opciones disponibles en el chat:
 2.  **ECAES:** Genera un formulario con preguntas de simulación tipo ECAES (Saber Pro específico).
 3.  **CHAT:** Permite hacer consultas directas al agente de Inteligencia Artificial como un modelo de lenguaje normal.
 
-![Opciones de Chat](src\imgDoc\tiposPregunta.jpg)
+![Opciones de Chat](src/imgDoc/tiposPregunta.jpg)
 
 ### 2. Presentación y Solución del Formulario (ICFES/ECAES)
 
@@ -176,19 +176,19 @@ Si seleccionas la opción **ICFES** o **ECAES**, se mostrará un formulario con 
 
 > **Límite:** La cantidad máxima de preguntas que se puede generar por formulario es de **20**. Esto se implementa para optimizar la respuesta de la IA y evitar redundancia o repetición en las preguntas.
 
-![Formulario con las preguntas](src\imgDoc\responderPreguntas.jpg)
+![Formulario con las preguntas](src/imgDoc/responderPreguntas.jpg)
 
 Allí podrás seleccionar la opción que consideres correcta y avanzar. Es posible dejar una pregunta sin resolver y **devolverse** para responderla. Las preguntas que ya respondiste se marcarán en color verde.
 
 Al responder la última pregunta, el botón de "Finalizar" estará disponible para terminar el formulario.
 
-![Formulario con las preguntas](src\imgDoc\seleccionarRespuesta.jpg)
+![Formulario con las preguntas](src/imgDoc/seleccionarRespuesta.jpg)
 
 ### 3. Visualización de Resultados y Retroalimentación
 
 Una vez que hayas terminado y presionado **Finalizar**, el sistema te mostrará el resultado obtenido.
 
-![Resultado Obtenido](src\imgDoc\resultados1.jpg)
+![Resultado Obtenido](src/imgDoc/resultados1.jpg)
 
 #### Detalle de Respuestas
 
@@ -196,24 +196,24 @@ Podrás revisar detalladamente las respuestas que tuviste correctas e incorrecta
 
 * **Incorrecta:** Cuando la respuesta fue errónea, se indicará claramente cuál era la opción correcta.
 
-![Revisión de Respuesta Correcta](src\imgDoc\respuestaCorrecta.jpg)
+![Revisión de Respuesta Correcta](src/imgDoc/respuestaCorrecta.jpg)
 
 #### Opción de Explicación
 
 Por último, puedes seleccionar la opción **"Explícame esta pregunta"** para obtener una retroalimentación detallada del agente de IA y comprender tu error o el fundamento de la respuesta correcta.
 
-![Retroalimentación Detallada](src\imgDoc\retroalimentacion.jpg)
-![Continuación de Retroalimentación](src\imgDoc\retroalimentacion2.jpg)
+![Retroalimentación Detallada](src/imgDoc/retroalimentacion.jpg)
+![Continuación de Retroalimentación](src/imgDoc/retroalimentacion2.jpg)
 
 ### 4. Modo CHAT
 
 Si por el contrario seleccionaste la opción de **CHAT**, podrás interactuar con el modelo de IA para hacer consultas directas y generales.
 
-![Pregunta en Modo Chat](src\imgDoc\preguntaChat.jpg)
+![Pregunta en Modo Chat](src/imgDoc/preguntaChat.jpg)
 
 En este modo, puedes seguir conversando por chat y el agente te responderá cualquier consulta de forma conversacional.
 
-src\imgDoc\mantenerChat.jpg
+![Continuar Conversación](src/imgDoc/mantenerChat.jpg)
 -----
 ## 🤝 Contribuciones
 
