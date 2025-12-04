@@ -14,6 +14,8 @@ Este proyecto combina una **aplicación web de frontend** (construida con Next.j
 
 El objetivo principal es **apoyar a estudiantes** que se preparan para las pruebas nacionales de Colombia, como **Saber 11** (educación media) y **Saber Pro** (educación superior), generando preguntas simuladas con la estructura y complejidad de las pruebas reales (ICFES).
 
+Este proyecto fue realizado para la asignatura Redes de la Maestría En Ciencias De La Información Y Las Comunicaciones como Modalidad de Grado: Materias de Posgrado
+
 ### Características Principales:
 
   * **Generación Ilimitada:** Crea una cantidad ilimitada de preguntas sobre cualquier temática o área del conocimiento.
@@ -223,3 +225,13 @@ Si deseas mejorar la estructura de las preguntas, agregar nuevas funcionalidades
 2.  Crear una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
 3.  Realizar tus cambios y hacer un *commit* (`git commit -m 'feat: agrega X funcionalidad'`).
 4.  Abrir un *Pull Request* (PR).
+
+## 🤝 Autores
+
+Diego Felipe Gamez Ramirez – 20201020009 
+
+David Andrés Gómez Rincón – 20201020031 
+
+Harrinson Toledo González - 20201020008 
+
+Angela Maria Santos Hernández - 20202020145 
