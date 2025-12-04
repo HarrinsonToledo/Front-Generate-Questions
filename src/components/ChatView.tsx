@@ -97,7 +97,7 @@ export default function ChatView({ onQuestionsGenerated }: ChatViewProps) {
   return (
     <div className="flex flex-col h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <header className="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
-        <h1 className="text-2xl font-bold text-gray-800">Generador de Preguntas ICFES</h1>
+        <h1 className="text-2xl font-bold text-gray-800">Guia digital para Examenes</h1>
         <p className="text-sm text-gray-600 mt-1">Asistente inteligente para práctica de exámenes</p>
       </header>
 
